@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    </head> 
+
+    <title>Captain America Movies</title>
+
+    <style>
+
+        html, body {
+
+            height: 100%;
+
+            margin: 0;
+
+            padding: 0;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+
+
+        body {
+
+            background-image: url('./captain_america_in_sky_background_4k_hd_captain_america-2560x1440.jpg');
+
+            background-size: cover;
+
+            background-repeat: no-repeat;
+
+            background-position: center;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            color: white;
+
+        }
+
+
+
+        .card {
+
+            background: rgba(0, 0, 0, 0.5);
+
+            backdrop-filter: blur(10px);
+
+            border-radius: 20px;
+
+            padding: 40px 60px;
+
+            text-align: center;
+
+            margin-top: 100px;
+
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+        }
+
+
+
+        .card h1 {
+
+            font-size: 42px;
+
+            margin-bottom: 20px;
+
+            letter-spacing: 2px;
+
+        }
+
+
+
+        .card p {
+
+            font-size: 22px;
+
+            margin: 10px 0;
+
+        }
+
+
+
+        .card p:hover {
+
+            color: #00ffff;
+
+            transition: 0.3s;
+
+        }
+
+
+
+       
+
+        .floating-contact-form {
+
+            position: fixed;
+
+            bottom: 20px;
+
+            right: 20px;
+
+            width: 300px;
+
+            padding: 20px;
+
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6));
+
+            backdrop-filter: blur(8px);
+
+            border-radius: 15px;
+
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+            color: white;
+
+            z-index: 999;
+
+        }
+
+
+
+        .floating-contact-form h3 {
+
+            margin-top: 0;
+
+            font-size: 22px;
+
+            text-align: center;
+
+            margin-bottom: 10px;
+
+        }
+
+
+
+        .floating-contact-form input,
+
+        .floating-contact-form textarea {
+
+            width: 100%;
+
+            padding: 10px;
+
+            margin: 8px 0;
+
+            border: none;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+
+            outline: none;
+
+            resize: none;
+
+        }
+
+
+
+        .floating-contact-form button {
+
+            width: 100%;
+
+            padding: 10px;
+
+            background-color: white;
+
+            color: black;
+
+            font-weight: bold;
+
+            border: none;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            transition: 0.3s ease;
+
+        }
+
+
+
+        .floating-contact-form button:hover {
+
+            background-color: #00ffff;
+
+        }
+
+
+
+      
+
+        .map-container {
+
+            position: fixed;
+
+            bottom: 20px;
+
+            left: 20px;
+
+            width: 300px;
+
+            height: 220px;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            .card {
+
+                padding: 30px 20px;
+
+                width: 90%;
+
+            }
+
+
+
+            .floating-contact-form,
+
+            .map-container {
+
+                width: 90%;
+
+                left: 5%;
+
+                right: 5%;
+
+                position: relative;
+
+                margin-top: 20px;
+
+            }
+
+         }
+
+    </style>
+
+</head>
+
+<body>
+
+   <nav class="navbar">
+
+    <a href="sweb.html">Home</a>
+
+    <a href="#">Movies</a>
+
+</nav>
+
+ <div class="card">
+
+        <h1>Captain America Movies</h1>
+
+        <p> Captain America: The First Avenger (2011)</p>
+
+        <p> Captain America: The Winter Soldier (2014)</p>
+
+        <p> Captain America: Civil War (2016)</p>
+
+    </div>
+
+
+
+    
+
+    <div class="map-container">
+
+        <iframe 
+
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160992039!2d72.74109992697863!3d19.082197838608332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63ef8b60db9%3A0x57a7e7ed20b83d26!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1719498274581!5m2!1sen!2sin" 
+
+            width="100%" 
+
+            height="100%" 
+
+            style="border:0;" 
+
+            allowfullscreen="" 
+
+            loading="lazy" 
+
+            referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>
+
+    </div>
+
+
+
+    
+
+    <div class="floating-contact-form">
+
+        <h3>Contact Me</h3>
+
+        <form>
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="tel" placeholder="Contact Number" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <textarea placeholder="Message" required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
